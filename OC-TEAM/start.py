@@ -216,7 +216,7 @@ def quit(sig, fream):
     if started:
         print(rd + "  [" + yl + "~" + rd + "]" + yl + " Aborting " + wi + f"{threads}" + yl + " Threads" + rd + "..." + wi)
         kill()
-        print(wi + "[" + gr + "*" + wi + "] Thanks For Using Doseq Script :)")
+        print(wi + "[" + gr + "*" + wi + "] Thanks For Using OC DDOS Script :)")
         print("[" + gr + "*" + wi + "] I Hope You Used It With Permission" + yl + "!?" + wi)
     sys.exit(0)
 
@@ -270,7 +270,7 @@ signal.signal(signal.SIGINT, quit)
 signal.signal(signal.SIGTERM, quit)
 print(banner)
 parse = optparse.OptionParser(usage='''
-Usage: python3 ./doseq.py [OPTIONS...]
+Usage: python3 ./start.py [OPTIONS...]
 -------------
 OPTIONS:
        |
@@ -289,18 +289,18 @@ OPTIONS:
     |--------
     | -D/--debug                                              ::> Show more output Default(disabled) (Optional)
     |--------
-    | -u/--update                                             ::> Update Doseq script to latest version
+    | -u/--update                                             ::> Update oc team script to latest version
 -------------
 Examples:
         |
      |--------
-     | python3 doseq.py -s 192.168.1.1
+     | python3 start.py -s 192.168.1.1
      |--------
-     | python3 doseq.py -s mydomain.com -p 443
+     | python3 start.py -s mydomain.com -p 443
      |--------
-     | python3 doseq.py -s 192.168.0.22 -p 22 -t 500 -a tcp -d 0.30 -S 0.60
+     | python3 start.py -s 192.168.0.22 -p 22 -t 500 -a tcp -d 0.30 -S 0.60
 
-''', add_help_option=False, version='Doseq version 1.2')
+''', add_help_option=False, version='OC DDOS version 1.2')
 parse.add_option('-s', '--server', '--target', type=str, dest='target')
 parse.add_option('-p', '--port', type=str, dest='port')
 parse.add_option('-t', '--threads', type=str, dest='threads')
